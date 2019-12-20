@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>travel form</title>
+
+        <style>
+            #id2{
+                background-color: cadetblue;
+                margin-left: 35%;
+                margin-right: 35%;
+                border-radius:10px;
+            }
+            #id3{
+                margin-left: 10%;
+                padding-bottom: 5%;
+                padding-top: 3%;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(nature-3082832_1920.jpg);">
+        <div id="id1">
+            <center><h1 style="font-style: italic;">Travel Reservation Form</h1></center>
+        </div>
+        <div id="id2">
+            <form id="id3">
+                <form method="GET" action="pract3.html">
+                    <center><h2 style="color: azure;"><b>Travel reservation form</b></h2></center>
+                
+                    <h4>*denotes mandatory</h4>
+                    <label>Full name*:</label><br>
+                    <input type="text" name="name" placeholder="firstname lastname" required><br><br>
+                    <label>Email address*:</label><br>
+                    <input type="email" name="email" placeholder="abc@gmail.com" required><br><br>
+                    <label>Select tour package</label><br>
+                    <select name="place" required>
+                        <option value="goa">Goa</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="ladakh">Ladakh</option>
+                        <option value="kasol">Kasol</option>
+                    </select><br><br>  
+                    <label>Arrival date*:</label><br>
+                    <input type="date" name="arrivaldate" placeholder="m/d/y" required><br><br>
+                    <label>no of persons*:</label><br>
+                    <input type="number" required><br><br>
+                    <label>what would you want to avail?*</label><br>
+                    <input type="checkbox" name="extras" value="boarding" >Boarding<br>
+                    <input type="checkbox" name="extras" value="Fooding" >Fooding<br>
+                    <input type="checkbox" name="extras" value="Sight seeing" >Sight Seeing<br><br>
+                    <label>Discount Coupan Code:</label><br>
+                    <input type="text" name="coupancode"><br><br>
+                    <label>Terms and conditions*</label><br>
+                    <input type="radio" name="confirmation" value="agree">I agree<input type="radio" name="confirmation" value="disagree">I disagree<br><br>
+                    <input type="submit" name="complete reservation" value="complete reservation">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
